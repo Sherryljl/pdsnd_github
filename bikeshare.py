@@ -185,8 +185,8 @@ def view_raw(city):
             seemore='yes'
             while seemore=='yes':
                 print (next_n_lines(cityfile,5))
-                seemore=input('\nWould you like to see more? Enter yes or no.\n')
-                
+                seemore=input('\nWould you like to see five more records? Enter yes or no.\n')
+
 
 
 
