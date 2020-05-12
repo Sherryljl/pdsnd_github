@@ -5,7 +5,7 @@
 bikeshare
 
 ### Description
-The bikeshare project provides an interactive way to analyze bike share data in three different city.
+The bikeshare project provides an interactive way to analyze bike share data in three different city and pull out raw data.
 
 ### Files used
 chicago.csv
