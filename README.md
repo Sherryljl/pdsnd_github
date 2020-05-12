@@ -5,7 +5,7 @@
 bikeshare
 
 ### Description
-Describe what your project is about and what it does
+The bikeshare project provides an interactive way to analyze bike share data in three different city.
 
 ### Files used
 Include the files used
