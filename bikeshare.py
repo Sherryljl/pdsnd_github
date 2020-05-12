@@ -174,7 +174,11 @@ def user_stats(df):
     print('-'*40)
 
 def next_n_lines(file_opened, N):
-    """return a list of N lines chunk from a opened file"""
+    """return a list of N lines chunk from a opened file
+    Args:
+        file_opened - opened file for chosen ciry
+        N - number of records will be return at a time
+    """
     return [x.strip() for x in islice(file_opened, N)]
 
 def view_raw(city):
