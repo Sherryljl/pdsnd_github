@@ -178,7 +178,10 @@ def next_n_lines(file_opened, N):
     return [x.strip() for x in islice(file_opened, N)]
 
 def view_raw(city):
-    """Displace 5 rows of raw data every time"""
+    """Displace 5 rows of raw data every time
+    Args:
+        (str) city - name of the city to analyze
+    """
     seeraw=input('\nWould you like to see 5 rows of raw data? Enter yes or no.\n')
     if seeraw=='yes':
         with open(CITY_DATA[city]) as cityfile:
@@ -186,7 +189,7 @@ def view_raw(city):
             while seemore=='yes':
                 print (next_n_lines(cityfile,5))
                 seemore=input('\nWould you like to see more? Enter yes or no.\n')
-                
+
 
 
 
