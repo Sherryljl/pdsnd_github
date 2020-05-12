@@ -174,7 +174,11 @@ def user_stats(df):
     print('-'*40)
 
 def next_n_lines(file_opened, N):
-    """return a list of N lines chunk from a opened file"""
+    """return a list of N lines chunk from a opened file
+    Args:
+        file_opened - opened file for chosen ciry
+        N - number of records will be return at a time
+    """
     return [x.strip() for x in islice(file_opened, N)]
 
 def view_raw(city):
@@ -188,7 +192,7 @@ def view_raw(city):
             seemore='yes'
             while seemore=='yes':
                 print (next_n_lines(cityfile,5))
-                seemore=input('\nWould you like to see more? Enter yes or no.\n')
+                seemore=input('\nWould you like to see five more records? Enter yes or no.\n')
 
 
 
@@ -204,7 +208,7 @@ def main():
         user_stats(df)
         view_raw(city)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart to see another city? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
