@@ -205,7 +205,7 @@ def main():
         user_stats(df)
         view_raw(city)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart to see another city? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
